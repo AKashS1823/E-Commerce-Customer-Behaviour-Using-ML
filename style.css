@@ -1,0 +1,112 @@
+body {
+  background-color: #f0f0f0; /* Light gray background color for better visibility */
+  font-family: 'Arimo', sans-serif;
+  margin: 0;
+  color: #333; /* Default content color */
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.content {
+  padding: 20px;
+  margin-top: 50px; /* Add a top margin to avoid content overlay */
+}
+
+.home, .about, .visualization, .predict {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.login {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1, h2, h3, p, ul {
+  font-family: 'Arimo', sans-serif;
+  color: #333; /* Heading and content color */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form input[type="text"],
+form input[type="datetime-local"],
+form input[type="number"],
+form input[type="password"],
+form input[type="email"] {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  width: calc(50% - 12px); /* Adjusted for two-column layout */
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="datetime-local"]:focus,
+form input[type="number"]:focus,
+form input[type="password"]:focus,
+form input[type="email"]:focus {
+  border-color: #5cb85c;
+}
+
+button {
+  background: #5cb85c;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background: #4cae4c;
+}
+
+::placeholder {
+  color: #999;
+}
